@@ -27,13 +27,13 @@ func main() {
 
 ## Comparison with goldmark's CJK extension (`WithEscapedSpace`)
 
-Combining this extension with goldmark's CJK extension (`WithEscapedSpace`) is welcome. They are not mutually exclusive. If you meet a case that cannot be emphasized with this extension, you can rely on goldmark's CJK extension:
+Combining this extension with goldmark's CJK extension (`WithEscapedSpace`) is welcome. They are not mutually exclusive. If you meet a case that cannot be emphasized with this extension, you can rely on goldmark's CJK extension as a last resort:
 
 ```md
 a\ **()**\ aあ**()**あ
 ```
 
-This extension can handle the case `あ**()**あ`, but cannot handle the case `a**()**a` for the compatibility with the plain CommonMark. You can add `\ ` outside a emphasis expression to make CJK extension work.
+This extension can handle the case `あ**()**あ`, but cannot handle the case `a**()**a` for the compatibility with the plain CommonMark. You can add `\ ` outside the emphasis marks to delegate the fix to goldmark's CJK extension.
 
 ```go
 package main
