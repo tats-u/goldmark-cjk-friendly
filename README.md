@@ -1,6 +1,6 @@
 # goldmark-cjk-friendly
 
-This is a port of [`remark-cjk-friendly` / `markdown-it-cjk-friendly`](https://github.com/tats-u/markdown-cjk-friendly) for [Goldmark](https://github.com/yuin/goldmark) as an external extension.
+This is a port of [`remark-cjk-friendly` / `markdown-it-cjk-friendly`](https://github.com/tats-u/markdown-cjk-friendly) for [goldmark](https://github.com/yuin/goldmark) as an external extension.
 
 ## Usage
 
@@ -22,12 +22,12 @@ func main() {
 ```
 
 - `CJKFriendlyEmphasis`: The basic extension without GFM strikethrough support
-- `CJKFriendlyEmphasisAndStrikethrough`: The basic extension with GFM strikethrough support. You do not need to add Goldmark's `Strikethrough` extension if you use this extension.
-- `CJKFriendlyStrikethrough`: `CJKFriendlyEmphasisAndStrikethrough` - `CJKFriendlyEmphasis`. However, you do not need to prefer this extension to `CJKFriendlyEmphasisAndStrikethrough` since you will want to use `CJKFriendlyEmphasis` and `CJKFriendlyStrikethrough` together. Use this extension only if you want to switch between this extension and Goldmark's plain `Strikethrough` extension.
+- `CJKFriendlyEmphasisAndStrikethrough`: The basic extension with GFM strikethrough support. You do not need to add goldmark's `Strikethrough` extension if you use this extension.
+- `CJKFriendlyStrikethrough`: `CJKFriendlyEmphasisAndStrikethrough` - `CJKFriendlyEmphasis`. However, you do not need to prefer this extension to `CJKFriendlyEmphasisAndStrikethrough` since you will want to use `CJKFriendlyEmphasis` and `CJKFriendlyStrikethrough` together. Use this extension only if you want to switch between this extension and goldmark's plain `Strikethrough` extension.
 
-## Comparison with Goldmark's `EscapedSpace` extension
+## Comparison with goldmark's `EscapedSpace` extension
 
-Combining this extension with Goldmark's `EscapedSpace` extension is welcome. They are not mutually exclusive. If you meet a case that cannot be emphasized with this extension, you can rely on Goldmark's `EscapedSpace` extension:
+Combining this extension with goldmark's `EscapedSpace` extension is welcome. They are not mutually exclusive. If you meet a case that cannot be emphasized with this extension, you can rely on goldmark's `EscapedSpace` extension:
 
 ```md
 a\ **()**\ aあ**()**あ
@@ -56,4 +56,4 @@ func main() {
 
 ## License
 
-MIT (same as Goldmark)
+MIT (same as goldmark)
