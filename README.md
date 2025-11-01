@@ -1,5 +1,9 @@
 # goldmark-cjk-friendly
 
+[![https://pkg.go.dev/github.com/tats-u/goldmark-cjk-friendly](https://pkg.go.dev/badge/github.com/tats-u/goldmark-cjk-friendly.svg)](https://pkg.go.dev/github.com/tats-u/goldmark-cjk-friendly)
+[![https://goreportcard.com/report/github.com/tats-u/goldmark-cjk-friendly](https://goreportcard.com/badge/github.com/tats-u/goldmark-cjk-friendly)](https://goreportcard.com/report/github.com/tats-u/goldmark-cjk-friendly)
+[![Release](https://img.shields.io/github/release/tats-u/goldmark-cjk-friendly.svg)](https://github.com/tats-u/goldmark-cjk-friendly/releases)
+
 This is a port of [`remark-cjk-friendly` / `markdown-it-cjk-friendly`](https://github.com/tats-u/markdown-cjk-friendly) for [goldmark](https://github.com/yuin/goldmark) as an external extension.
 
 ## Usage
