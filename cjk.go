@@ -9,6 +9,9 @@ import (
 type cjkFriendlyEmphasis struct {
 }
 
+// CJKFriendlyEmphasis is a basic extension without GFM strikethrough support
+//
+// Use CJKFriendlyEmphasisAndStrikethrough instead if you need GFM strikethrough support
 var CJKFriendlyEmphasis = &cjkFriendlyEmphasis{}
 
 func (e *cjkFriendlyEmphasis) Extend(m goldmark.Markdown) {

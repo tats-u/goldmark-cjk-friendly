@@ -75,6 +75,8 @@ type cjkFriendlyStrikethrough struct {
 }
 
 // CJKFriendlyStrikethrough is an extension that allow you to use strikethrough expression like '~~text~~' .
+//
+// This is mutably exclusive with goldmark's Strikethrough extension.
 var CJKFriendlyStrikethrough = &cjkFriendlyStrikethrough{}
 
 func (e *cjkFriendlyStrikethrough) Extend(m goldmark.Markdown) {
