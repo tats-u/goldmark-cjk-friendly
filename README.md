@@ -1,7 +1,7 @@
 # goldmark-cjk-friendly
 
-[![https://pkg.go.dev/github.com/tats-u/goldmark-cjk-friendly](https://pkg.go.dev/badge/github.com/tats-u/goldmark-cjk-friendly.svg)](https://pkg.go.dev/github.com/tats-u/goldmark-cjk-friendly)
-[![https://goreportcard.com/report/github.com/tats-u/goldmark-cjk-friendly](https://goreportcard.com/badge/github.com/tats-u/goldmark-cjk-friendly)](https://goreportcard.com/report/github.com/tats-u/goldmark-cjk-friendly)
+[![https://pkg.go.dev/github.com/tats-u/goldmark-cjk-friendly/v2](https://pkg.go.dev/badge/github.com/tats-u/goldmark-cjk-friendly/v2.svg)](https://pkg.go.dev/github.com/tats-u/goldmark-cjk-friendly/v2)
+[![https://goreportcard.com/report/github.com/tats-u/goldmark-cjk-friendly/v2](https://goreportcard.com/badge/github.com/tats-u/goldmark-cjk-friendly/v2)](https://goreportcard.com/report/github.com/tats-u/goldmark-cjk-friendly/v2)
 [![Release](https://img.shields.io/github/release/tats-u/goldmark-cjk-friendly.svg)](https://github.com/tats-u/goldmark-cjk-friendly/releases)
 
 This is a port of [`remark-cjk-friendly` / `markdown-it-cjk-friendly`](https://github.com/tats-u/markdown-cjk-friendly) for [goldmark](https://github.com/yuin/goldmark) as an external extension.
@@ -13,7 +13,7 @@ package main
 
 import (
     "github.com/yuin/goldmark"
-    "github.com/tats-u/goldmark-cjk-friendly"
+    "github.com/tats-u/goldmark-cjk-friendly/v2"
 )
 
 func main() {
@@ -28,6 +28,9 @@ func main() {
 - `CJKFriendlyEmphasis`: The basic extension without GFM strikethrough support
 - `CJKFriendlyEmphasisAndStrikethrough`: The basic extension with GFM strikethrough support. You do not need to add goldmark's `Strikethrough` extension if you use this extension.
 - `CJKFriendlyStrikethrough`: `CJKFriendlyEmphasisAndStrikethrough` - `CJKFriendlyEmphasis`. However, you do not need to prefer this extension to `CJKFriendlyEmphasisAndStrikethrough` since you will want to use `CJKFriendlyEmphasis` and `CJKFriendlyStrikethrough` together. Use this extension only if you want to switch between this extension and goldmark's plain `Strikethrough` extension.
+
+> [!IMPORTANT]
+> `/v2` here is required to use the latest version of this module.
 
 ## Comparison with goldmark's CJK extension (`WithEscapedSpace`)
 
@@ -45,7 +48,7 @@ package main
 import (
     "github.com/yuin/goldmark"
     "github.com/yuin/goldmark/extension"
-    "github.com/tats-u/goldmark-cjk-friendly"
+    "github.com/tats-u/goldmark-cjk-friendly/v2"
 )
 
 func main() {
