@@ -5,7 +5,7 @@ import (
 	"os"
 	"testing"
 
-	. "github.com/tats-u/goldmark-cjk-friendly"
+	. "github.com/tats-u/goldmark-cjk-friendly/v2"
 	"github.com/yuin/goldmark"
 	"github.com/yuin/goldmark/renderer/html"
 	"github.com/yuin/goldmark/testutil"

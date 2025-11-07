@@ -1,4 +1,4 @@
-module github.com/tats-u/goldmark-cjk-friendly
+module github.com/tats-u/goldmark-cjk-friendly/v2
 
 go 1.24
 

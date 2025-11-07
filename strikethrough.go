@@ -1,7 +1,7 @@
 package cjkfriendly
 
 import (
-	"github.com/tats-u/goldmark-cjk-friendly/internal"
+	"github.com/tats-u/goldmark-cjk-friendly/v2/internal"
 	"github.com/yuin/goldmark"
 	gast "github.com/yuin/goldmark/ast"
 	"github.com/yuin/goldmark/extension"

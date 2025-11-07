@@ -3,7 +3,7 @@ package cjkfriendly_test
 import (
 	"testing"
 
-	. "github.com/tats-u/goldmark-cjk-friendly"
+	. "github.com/tats-u/goldmark-cjk-friendly/v2"
 	"github.com/yuin/goldmark"
 	"github.com/yuin/goldmark/extension"
 	"github.com/yuin/goldmark/renderer/html"
